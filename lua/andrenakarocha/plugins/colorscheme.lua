@@ -1,8 +1,10 @@
 return {
-  "rose-pine/neovim",
-  name = "rose-pine",
-  config = function()
-    vim.cmd("colorscheme rose-pine")
-  end
+    "tiagovla/tokyodark.nvim",
+    opts = {
+      transparent_background = true,
+    },
+    config = function(_, opts)
+        require("tokyodark").setup(opts) -- calling setup is optional
+        vim.cmd [[colorscheme tokyodark]]
+    end,
 }
-

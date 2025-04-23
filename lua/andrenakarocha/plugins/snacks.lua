@@ -17,16 +17,10 @@ return {
     scroll = { enabled = true },
     statuscolumn = { enabled = true },
     words = { enabled = true },
-    styles = {
-      notification = {
-        -- wo = { wrap = true } -- Wrap notifications
-      }
-    }
   },
   keys = {
     { "<leader>z",  function() Snacks.zen() end,                     desc = "Toggle Zen Mode" },
     { "<leader>Z",  function() Snacks.zen.zoom() end,                desc = "Toggle Zoom" },
-    { "<leader>.",  function() Snacks.scratch() end,                 desc = "Toggle Scratch Buffer" },
     { "<leader>S",  function() Snacks.scratch.select() end,          desc = "Select Scratch Buffer" },
     { "<leader>n",  function() Snacks.notifier.show_history() end,   desc = "Notification History" },
     { "<leader>bd", function() Snacks.bufdelete() end,               desc = "Delete Buffer" },
